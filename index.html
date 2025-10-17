@@ -4,79 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traditional Wear Online Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Logo and Header -->
-    <img src="images/logo.png" alt="Logo" width="6%" align="left">
-    <h1 align="left">Welcome to Traditional Wear Online Store</h1>
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1>Welcome to Traditional Wear Online Store</h1>
+    </header>
 
     <!-- Navigation Bar -->
-    <nav align="left">
-        <a href="index.html">Home</a> |
-        <a href="saree.html">Saree</a> |
-        <a href="lehenga.html">Lehenga</a> |
-        <a href="langaoni.html">Langaoni</a> |
-        <a href="kidsdress.html">Kids</a> |
-        <a href="dhothi.html">Dhothi</a> |
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="saree.html">Saree</a>
+        <a href="lehenga.html">Lehenga</a>
+        <a href="langaoni.html">Langaoni</a>
+        <a href="kidsdress.html">Kids</a>
+        <a href="dhothi.html">Dhothi</a>
         <a href="about.html">About</a>
     </nav>
+
     <hr>
 
     <!-- Scrolling Images -->
     <marquee behavior="scroll" direction="left" scrollamount="10">
-        <img src="images/saree.png" alt="Saree" width="150" height="200">
-        <img src="images/lehenga.png" alt="Lehenga" width="150" height="200">
-        <img src="images/langaoni.png" alt="Langaoni" width="150" height="200">
-        <img src="images/kidsdress.png" alt="Kids Dress" width="150" height="200">
-        <img src="images/dhothi.png" alt="Dhothi" width="150" height="200">
+        <img src="images/saree.png" alt="Saree" class="scroll-img">
+        <img src="images/lehenga.png" alt="Lehenga" class="scroll-img">
+        <img src="images/langaoni.png" alt="Langaoni" class="scroll-img">
+        <img src="images/kidsdress.png" alt="Kids Dress" class="scroll-img">
+        <img src="images/dhothi.png" alt="Dhothi" class="scroll-img">
     </marquee>
 
     <hr>
 
-    <!-- Clickable Product Portraits -->
-    <table align="center" cellpadding="10">
-        <tr>
-            <td align="center">
-                <a href="saree.html">
-                    <img src="images/saree.png" alt="Saree" width="150" height="200"
-                        onmouseover="this.width=170; this.height=220;"
-                        onmouseout="this.width=150; this.height=200;">
-                </a>
-            </td>
-            <td align="center">
-                <a href="lehenga.html">
-                    <img src="images/lehenga.png" alt="Lehenga" width="150" height="200"
-                        onmouseover="this.width=170; this.height=220;"
-                        onmouseout="this.width=150; this.height=200;">
-                </a>
-            </td>
-            <td align="center">
-                <a href="langaoni.html">
-                    <img src="images/langaoni.png" alt="Langaoni" width="150" height="200"
-                        onmouseover="this.width=170; this.height=220;"
-                        onmouseout="this.width=150; this.height=200;">
-                </a>
-            </td>
-            <td align="center">
-                <a href="kidsdress.html">
-                    <img src="images/kidsdress.png" alt="Kids Dress" width="150" height="200"
-                        onmouseover="this.width=170; this.height=220;"
-                        onmouseout="this.width=150; this.height=200;">
-                </a>
-            </td>
-            <td align="center">
-                <a href="dhothi.html">
-                    <img src="images/dhothi.png" alt="Dhothi" width="150" height="200"
-                        onmouseover="this.width=170; this.height=220;"
-                        onmouseout="this.width=150; this.height=200;">
-                </a>
-            </td>
-        </tr>
-    </table>
+    <!-- Flex Product Section -->
+    <section class="product-section">
+        <div class="product-card">
+            <a href="saree.html"><img src="images/saree.png" alt="Saree" class="product-img"></a>
+            <h2>Saree</h2>
+        </div>
+        <div class="product-card">
+            <a href="lehenga.html"><img src="images/lehenga.png" alt="Lehenga" class="product-img"></a>
+            <h2>Lehenga</h2>
+        </div>
+        <div class="product-card">
+            <a href="langaoni.html"><img src="images/langaoni.png" alt="Langaoni" class="product-img"></a>
+            <h2>Langaoni</h2>
+        </div>
+        <div class="product-card">
+            <a href="kidsdress.html"><img src="images/kidsdress.png" alt="Kids Dress" class="product-img"></a>
+            <h2>Kids Dress</h2>
+        </div>
+        <div class="product-card">
+            <a href="dhothi.html"><img src="images/dhothi.png" alt="Dhothi" class="product-img"></a>
+            <h2>Dhothi</h2>
+        </div>
+    </section>
 
-    <hr>
-    <footer align="center">
+    <footer>
         &copy; 2025 Traditional Wear Online Store | All Rights Reserved
     </footer>
 
